@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +37,8 @@ class MainActivity : AppCompatActivity() {
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
         DatePickerDialog(this,
-        DatePickerDialog.OnDateSetListener{view,year, month, dayOfMonth ->
+        {view,selectedYear, selectedMonth, selectedDay ->
+            Toast.makeText(this, "year: $selectedYear, month:${selectedMonth+1}, day: $selectedDay", Toast.LENGTH_LONG).show()
 
         },
             year,
