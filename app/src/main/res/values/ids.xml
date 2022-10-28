@@ -2,5 +2,5 @@
 <resources>
     <item name="btnDatePicker" type="id" />
     <item name="tvSelectedDate" type="id" />
-    <item name="tvSelectedDateInMinutes" type="id" />
+    <item name="tvSelectedAgeInMinutes" type="id" />
 </resources>
