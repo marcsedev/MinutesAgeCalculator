@@ -1,3 +1,3 @@
 # MinutesAgeCalculator
 
-This the REASME file for this project
+This the README file for this project
